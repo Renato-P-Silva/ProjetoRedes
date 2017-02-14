@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <!--skip-->
+        <title>Video Conferência</title>
+        <link rel="stylesheet" type="text/css" href="/easyrtc/easyrtc.css" />
+
+        <!--hide-->
+        <link rel="stylesheet" type="text/css" href="css/landing.css" />
+
+        <!-- Prettify Code -->
+        <script type="text/javascript" src="js/prettify/prettify.js"></script>
+        <script type="text/javascript" src="js/prettify/loadAndFilter.js"></script>
+        <script type="text/javascript" src="js/prettify/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/prettify/prettify.css" />
+
+        <!--show-->
+        <!-- Assumes global locations for socket.io.js and easyrtc.js -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="/easyrtc/easyrtc.js"></script>
+        <script type="text/javascript" src="js/demo4.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/demo4.css" />
+        <!--hide-->
+        <!-- Styles used within the demo -->
+        <style type="text/css">
+        </style>
+    </head>
+
+    <body onload="connect();">
+        <div id="container">
+            <div id="header">
+                <a href="index.html"><img id="logo_easyrtc" src="images/easyrtc_logo.png" alt="easyrtc" style="" /></a>
+            </div>
+
+            <div id="main">
+               
+                <hr />
+                <h2>Comunique-se...</h2>
+                <!--show-->
+                <div id="demoContainer">
+                    <div id="connectControls">
+                        <div id="iam">Ainda não conectado...</div>
+                        <br />
+                        <strong>Pessoas Conectadas:</strong>
+                        <div id="otherClients"></div>
+                    </div>
+                    <div id="videos">
+                        <video  autoplay="autoplay" id="selfVideo" class="easyrtcMirror"></video>
+                    <div style="position:relative;float:left;">
+                            <video  autoplay="autoplay" id="callerVideo" class="callerVideo"></video>
+                    </div> <br>
+                    <div style="position:relative;float:left;">
+                            <video  autoplay="autoplay" id="callerVideo2" class="callerVideo"></video>
+                    </div>
+                    <div style="position:relative;float:left;">
+                            <video  autoplay="autoplay" id="callerVideo3" class="callerVideo"></video>
+                    </div>
+                    </div>
+                </div>
+                
+                <!-- End Main Content -->
+            </div>
+            <div id="footer">                
+                <p><em>&copy; 2017 - Fins Estudantis.</em></p>
+            </div>
+        </div>
+        <!--show-->
+    </body>
+</html>
